@@ -4,7 +4,7 @@ Application name: Hangman.py
 Purpose: This application is a game of hangman, where the user will input random letters
 in hopes to guess a correct letter of an 8-letter word to not dismember the ASCII man.
 There is a list of random words (that will also be randomly selected) in a separate text
-time named "words.txt" locted in the "pythonFinal" folder.
+time named "words.txt" 
 '''
 
 import random #importing a pre-set function to randomly choose something for us
@@ -178,9 +178,8 @@ else:
     print("Congratulations! The word was", word,". You have saved this man's life.")
     print()
 print()
-play_again = input("Do you want to restart? Yes or No:  ") #actually took me a long time to find this little function here. The game was tedious without a quick restart after I compiled the entire program without defining "main."
-
+play_again = input("Do you want to restart? Yes or No:  ") 
 if play_again == "Yes" or "yes" or "y":
-    exec(open("./pythonFinal.py").read())
+    exec(open("./Hangman.py").read())
 else:
     exit()
