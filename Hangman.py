@@ -1,3 +1,4 @@
+'''
 Name: Heather Shirely
 Application name: Hangman.py
 Purpose: This application is a game of hangman, where the user will input random letters
