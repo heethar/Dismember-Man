@@ -7,7 +7,7 @@ There is a list of random words (that will also be randomly selected) in a separ
 time named "words.txt" 
 '''
 
-import random #importing a pre-set function to randomly choose something for us
+import random 
 
 #below is a tuple that Python will systematically go through once someone dismembers him by choosing a wrong letter.
 HANGMAN = (
@@ -120,13 +120,18 @@ HANGMAN = (
 
 #open and retrieve the word list
 with open("words.txt") as f:
-    WORDS = f.read().splitlines() #make the words a list of words
-word = random.choice(WORDS) #use our imported random function here
+#make the words a list of words
+    WORDS = f.read().splitlines() 
+ #use our imported random function here
+word = random.choice(WORDS) 
 Encouragement = ("Amazing!", "w00t!1!!", "Well done!", "Awesome!", "GO YOU!", "Nice!") #these are just nice to read
-MAX_WRONG = len(word) - 1 #The amount of lives depends on the length of the word. Therefore, all words are 8 charachers so the image fits appropriately
+#The amount of lives depends on the length of the word. Therefore, all words are 8 charachers so the image fits appropriately
+MAX_WRONG = len(word) - 1 
 so_far = ("-") * len(word)
-used = [] #initiate an empty list for letters that will be used
-wrong = 0 #initiate a value for lives so MAX_WRONG works
+#initiate an empty list for letters that will be used
+used = [] 
+#initiate a value for lives so MAX_WRONG works
+wrong = 0 
 
 
 print("\t \t Welcome to Hangman!") #\t is a tab or a indention for the title of this game
